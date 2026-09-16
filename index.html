@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vipul Jain</title>
-  <meta name="description" content="Portfolio of Vipul Jain — technical lead in Pune. Full-stack web and mobile, architecture, and delivery." />
+  <meta name="description" content="Portfolio of Vipul Jain — technical lead in Pune. 12+ years shipping SaaS and ERP with PHP, React, and Node.js." />
   <meta name="theme-color" content="#1d4a43" />
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,8 +13,9 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
+  <div class="progress" aria-hidden><span id="progress"></span></div>
   <a class="skip" href="#work">Skip to work</a>
-  <header class="site-header">
+  <header class="site-header" id="header">
     <div class="wrap bar">
       <a class="brand" href="#top" aria-label="Back to top">
         <span class="mark">VJ</span>
@@ -27,10 +28,8 @@
         <a href="#contact">Contact</a>
       </nav>
       <div class="header-actions">
-        <a class="btn btn-primary sm hide-sm" href="mailto:vipuljain2806@gmail.com">Email</a>
-        <button class="btn btn-outline icon only-sm" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
+        <a class="btn btn-primary btn-sm hide-sm" href="mailto:vipuljain2806@gmail.com">Email</a>
+        <button class="btn btn-outline icon only-sm" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
       </div>
     </div>
   </header>
@@ -46,205 +45,345 @@
 
   <main>
     <section id="top" class="hero wrap">
+      <div class="hero-spot" aria-hidden></div>
       <div>
         <p class="kicker">
-          <img class="mini-avatar" src="https://avatars.githubusercontent.com/u/5869283?v=4" alt="" width="32" height="32" />
-          <span><i class="dot"></i> Technical Lead · ITC Infotech</span>
-          <span class="loc">Pune, Maharashtra</span>
+          <img class="mini-avatar" src="./avatar.jpg" alt="" width="32" height="32" />
+          <span><i class="dot"></i> Technical Lead · Persistent Systems</span>
+          <span>Pune, Maharashtra</span>
         </p>
-        <h1>I build the systems teams can keep shipping.</h1>
-        <p class="lede">Full-stack technical lead with more than a decade on web and mobile products — industrial calibration platforms, marketplaces, and AI-assisted tools. I lead delivery, set architecture, and still write the code that has to last.</p>
+        <h1>
+          <span class="word" style="animation-delay:0ms">I</span>
+          <span class="word" style="animation-delay:70ms">lead</span>
+          <span class="word" style="animation-delay:140ms">teams</span>
+          <span class="word" style="animation-delay:210ms">that</span>
+          <span class="word" style="animation-delay:280ms">ship</span><br />
+          <span class="word" style="animation-delay:350ms">systems</span>
+          <span class="word" style="animation-delay:420ms">people</span>
+          <span class="word" style="animation-delay:490ms">actually</span>
+          <span class="word" style="animation-delay:560ms">use.</span>
+        </h1>
+        <p class="lede">Full-stack technical lead with 12+ years in PHP, React, and Node.js. I have led teams of up to 18, delivered 40+ SaaS and ERP products, and still write the code that has to last — APIs 70% faster, AUM 40% quicker, server cost down 30%.</p>
         <div class="cta">
-          <a class="btn btn-primary lg" href="#work">See selected work</a>
-          <a class="btn btn-outline lg" href="https://github.com/vipuljain28" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn btn-primary btn-lg" href="#work">See selected work</a>
+          <a class="btn btn-outline btn-lg" href="https://github.com/vipuljain28" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
       <aside>
-        <figure class="portrait">
-          <img src="https://avatars.githubusercontent.com/u/5869283?v=4" alt="Vipul Jain, technical lead" width="640" height="640" />
-          <figcaption><span>Vipul Jain</span><span>Full stack</span></figcaption>
-        </figure>
-        <dl class="stats">
-          <div><dt>Years</dt><dd>10+</dd></div>
-          <div><dt>Repos</dt><dd>16</dd></div>
-          <div><dt>Based</dt><dd>Pune</dd></div>
-        </dl>
+        <div class="portrait" id="portrait">
+          <img src="./avatar.jpg" alt="Vipul Jain, technical lead" width="640" height="640" />
+        </div>
+        <p class="caption"><span>Vipul Jain</span><span>Full stack · Pune</span></p>
       </aside>
     </section>
 
-    <section id="work" class="band">
+    <section class="metrics">
+      <div class="wrap metrics-grid">
+        <div class="metric reveal"><b data-count="12" data-suffix="+">0+</b><span>Years shipping</span></div>
+        <div class="metric reveal"><b data-count="40" data-suffix="+">0+</b><span>Products delivered</span></div>
+        <div class="metric reveal"><b data-count="18" data-suffix="">0</b><span>Largest team led</span></div>
+        <div class="metric reveal"><b data-count="70" data-suffix="%">0%</b><span>API speed gain</span></div>
+      </div>
+    </section>
+
+    <section id="work">
       <div class="wrap pad">
         <div class="section-head">
-          <div>
+          <div class="reveal">
             <p class="eyebrow">Selected work</p>
             <h2>Things I have shipped</h2>
+            <p class="sub">Forty-plus products across SaaS, ERP, marketplaces, and labs. Open a card for the story, the stack, and the outcome.</p>
           </div>
-          <div class="filters" role="tablist" aria-label="Filter projects">
-            <button type="button" class="chip on" data-filter="all" role="tab" aria-selected="true">All</button>
-            <button type="button" class="chip" data-filter="open-source" role="tab" aria-selected="false">Open source</button>
+          <div class="filters" role="tablist" aria-label="Filter projects" id="filters">
+            <span class="filter-pill" id="pill"></span>
+            <button type="button" class="chip on" data-filter="all" role="tab" aria-selected="true">All work</button>
             <button type="button" class="chip" data-filter="product" role="tab" aria-selected="false">Products</button>
-            <button type="button" class="chip" data-filter="client" role="tab" aria-selected="false">Client work</button>
+            <button type="button" class="chip" data-filter="client" role="tab" aria-selected="false">Client</button>
+            <button type="button" class="chip" data-filter="open-source" role="tab" aria-selected="false">Open source</button>
           </div>
         </div>
-        <ol class="work-list" id="work-list">
-          <li data-kind="open-source"><a href="https://github.com/vipuljain28/Adaptive-RAG-Engine" target="_blank" rel="noreferrer">
-            <span class="num"></span>
-            <div>
-              <h3>Enterprise Knowledge Assistant <em>2026</em></h3>
-              <p>RAG assistant with dynamic model routing: complex queries to Amazon Bedrock (Claude), lighter ones to TinyLlama on EKS. Titan embeddings, OpenSearch Serverless, Bedrock Guardrails, and one-command Terraform deploy.</p>
-              <ul class="stack"><li>Python</li><li>Amazon Bedrock</li><li>OpenSearch</li><li>EKS</li><li>Terraform</li></ul>
-            </div>
-          </a></li>
-          <li data-kind="product"><a href="https://github.com/vipuljain28/travel-reel-studio" target="_blank" rel="noreferrer">
-            <span class="num"></span>
-            <div>
-              <h3>Travel Reel Studio <em>2026</em></h3>
-              <p>Local-first, AI-assisted travel media discovery and Instagram Reel generation. AI directs the cut; FFmpeg renders. Works offline, then optionally layers Google Photos, Places, and Gemini.</p>
-              <ul class="stack"><li>TypeScript</li><li>Prisma</li><li>FFmpeg</li><li>Gemini</li></ul>
-            </div>
-          </a></li>
-          <li data-kind="product"><a href="https://github.com/vipuljain28/my-mobile-ide" target="_blank" rel="noreferrer">
-            <span class="num"></span>
-            <div>
-              <h3>My Mobile IDE <em>2026</em></h3>
-              <p>A purpose-built mobile IDE for iPhone, iPad, and Android on the Code - OSS architecture — not Electron crammed onto a phone. Capacitor shell, web workbench, and a secure remote runtime.</p>
-              <ul class="stack"><li>TypeScript</li><li>Capacitor</li><li>VS Code OSS</li><li>Vite</li></ul>
-            </div>
-          </a></li>
-          <li data-kind="open-source"><a href="https://github.com/vipuljain28/Distributed-Workflow" target="_blank" rel="noreferrer">
-            <span class="num"></span>
-            <div>
-              <h3>Distributed Workflow <em>2025</em></h3>
-              <p>End-to-end workflow engine with a TypeScript backend and a dedicated frontend — built to model, run, and observe multi-step jobs across services.</p>
-              <ul class="stack"><li>TypeScript</li><li>Node.js</li><li>React</li></ul>
-            </div>
-          </a></li>
-          <li data-kind="client"><a href="http://oorjatechnical.com" target="_blank" rel="noreferrer">
-            <span class="num"></span>
-            <div>
-              <h3>Oorja Calibration Platform <em>2011 — ongoing</em></h3>
-              <p>Long-running partnership with Oorja Technical to digitise industrial instrument calibration and validation. Replaced an error-prone paper process with a system labs actually use — phase after phase, still in production.</p>
-              <ul class="stack"><li>PHP</li><li>TypeScript</li><li>MySQL</li></ul>
-            </div>
-          </a></li>
-          <li data-kind="client">
-            <div class="plain">
-              <span class="num"></span>
-              <div>
-                <h3>Real Estate CRM <em>2013</em></h3>
-                <p>Inquiries, site visits, bookings, inventory, expenses, and agent-wise sales — plus MLM hierarchy for the field team. Custom in-house PHP framework, built to stay stable under daily agency use.</p>
-                <ul class="stack"><li>PHP</li><li>MySQL</li></ul>
-              </div>
-            </div>
-          </li>
-          <li data-kind="client">
-            <div class="plain">
-              <span class="num"></span>
-              <div>
-                <h3>Chemkart <em>2016</em></h3>
-                <p>A marketplace for industrial chemicals — catalog, orders, and seller workflows for a specialised B2B audience.</p>
-                <ul class="stack"><li>PHP</li><li>MySQL</li></ul>
-              </div>
-            </div>
-          </li>
-          <li data-kind="client">
-            <div class="plain">
-              <span class="num"></span>
-              <div>
-                <h3>Find My Shipper <em>2016</em></h3>
-                <p>On-demand load matching — an “OLA for loading” that connected shippers with available trucks.</p>
-                <ul class="stack"><li>PHP</li><li>JavaScript</li></ul>
-              </div>
-            </div>
-          </li>
-          <li data-kind="client">
-            <div class="plain">
-              <span class="num"></span>
-              <div>
-                <h3>BFF — But Food First <em>2016</em></h3>
-                <p>Online food ordering: menus, carts, and kitchen-side order flow for a local food brand.</p>
-                <ul class="stack"><li>PHP</li><li>JavaScript</li></ul>
-              </div>
-            </div>
-          </li>
-          <li data-kind="client">
-            <div class="plain">
-              <span class="num"></span>
-              <div>
-                <h3>AutoBouy <em>2013</em></h3>
-                <p>Singapore automobile marketplace with seller storefronts, built on CodeIgniter.</p>
-                <ul class="stack"><li>PHP</li><li>CodeIgniter</li></ul>
-              </div>
-            </div>
-          </li>
-        </ol>
+        <div class="work-grid" id="work-grid">
+          <button type="button" class="card wide reveal" data-kind="product" data-id="sales-ninja">
+      <div class="thumb">
+        <img src="./projects/sales-ninja.jpg" alt="" />
+        <span class="overlay">Read the case →</span>
+      </div>
+      <div class="card-body">
+        <p class="meta">Product · 2022 — 2024</p>
+        <h3>Sales Ninja Call CRM</h3>
+        <p class="blurb">All-in-one call CRM: live monitoring, agent scorecards, and coaching insights. Built from zero with a team of six — MVP in four months.</p>
+        <ul class="stack"><li>React</li><li>Node.js</li><li>MongoDB</li><li>Redis</li></ul>
+      </div>
+    </button>
+<button type="button" class="card reveal" data-kind="product" data-id="wealthelite">
+      <div class="thumb">
+        <img src="./projects/wealthelite.jpg" alt="" />
+        <span class="overlay">Read the case →</span>
+      </div>
+      <div class="card-body">
+        <p class="meta">Product · 2022 — 2024</p>
+        <h3>Wealthelite</h3>
+        <p class="blurb">SaaS ERP for mutual fund distributors — portfolios, transactions, and AUM. APIs 70% faster, AUM calculation 40% quicker.</p>
+        <ul class="stack"><li>PHP</li><li>Yii2</li><li>MySQL</li><li>MongoDB</li></ul>
+      </div>
+    </button>
+<button type="button" class="card reveal" data-kind="client" data-id="sage">
+      <div class="thumb">
+        <img src="./projects/sage-intacct.jpg" alt="" />
+        <span class="overlay">Read the case →</span>
+      </div>
+      <div class="card-body">
+        <p class="meta">Client work · 2024 — present</p>
+        <h3>Sage Intacct</h3>
+        <p class="blurb">Cloud financials for mid-market companies. At Persistent I lead delivery, REST integrations, and a file-automation rebuild.</p>
+        <ul class="stack"><li>PHP</li><li>JavaScript</li><li>REST</li><li>Scrum</li></ul>
+      </div>
+    </button>
+<button type="button" class="card reveal" data-kind="product" data-id="star">
+      <div class="thumb">
+        <img src="./projects/star-calibration.jpg" alt="" />
+        <span class="overlay">Read the case →</span>
+      </div>
+      <div class="card-body">
+        <p class="meta">Product · 2018 — ongoing</p>
+        <h3>Star Calibration</h3>
+        <p class="blurb">SaaS LIMS for calibration labs. Digitised the floor, cut required workforce by 40%, and lifted productivity 45–60%.</p>
+        <ul class="stack"><li>PHP</li><li>Node.js</li><li>MySQL</li><li>JavaScript</li></ul>
+      </div>
+    </button>
+<button type="button" class="card reveal" data-kind="client" data-id="oorja">
+      <div class="thumb">
+        <img src="./projects/oorja.jpg" alt="" />
+        <span class="overlay">Read the case →</span>
+      </div>
+      <div class="card-body">
+        <p class="meta">Client work · 2011 — ongoing</p>
+        <h3>Oorja Technical</h3>
+        <p class="blurb">Long partnership: a dynamic calibration engine, then a full ERP covering HR, CRM, inventory, accounts, and validation testing.</p>
+        <ul class="stack"><li>PHP</li><li>MySQL</li><li>JavaScript</li></ul>
+      </div>
+    </button>
+<button type="button" class="card reveal" data-kind="open-source" data-id="mobile-ide">
+      <div class="thumb">
+        <img src="./projects/mobile-ide.jpg" alt="" />
+        <span class="overlay">Read the case →</span>
+      </div>
+      <div class="card-body">
+        <p class="meta">Open source · 2026</p>
+        <h3>My Mobile IDE</h3>
+        <p class="blurb">A Code-OSS IDE built for iPhone, iPad, and Android — a real workbench, not a desktop app squeezed onto a phone.</p>
+        <ul class="stack"><li>TypeScript</li><li>Capacitor</li><li>VS Code OSS</li><li>Vite</li></ul>
+      </div>
+    </button>
+<button type="button" class="card reveal" data-kind="client" data-id="nextdaycuts">
+      <div class="thumb">
+        <img src="./projects/nextdaycuts.jpg" alt="" />
+        <span class="overlay">Read the case →</span>
+      </div>
+      <div class="card-body">
+        <p class="meta">Client work · 2016</p>
+        <h3>NextDayCuts</h3>
+        <p class="blurb">Lawn-care marketplace. Homeowners book a cut, mowers bid, PayPal settles — maps and property context included.</p>
+        <ul class="stack"><li>PHP</li><li>Laravel</li><li>MySQL</li><li>Google Maps</li></ul>
+      </div>
+    </button>
+<button type="button" class="card reveal" data-kind="client" data-id="autobuoy">
+      <div class="thumb">
+        <img src="./projects/autobuoy.jpg" alt="" />
+        <span class="overlay">Read the case →</span>
+      </div>
+      <div class="card-body">
+        <p class="meta">Client work · 2013</p>
+        <h3>Autobuoy</h3>
+        <p class="blurb">Automobile marketplace with seller storefronts, rentals, community, and payments — Laravel throughout.</p>
+        <ul class="stack"><li>PHP</li><li>Laravel</li><li>MySQL</li><li>PayPal</li></ul>
+      </div>
+    </button>
+<button type="button" class="card reveal" data-kind="client" data-id="dfashion">
+      <div class="thumb">
+        <img src="./projects/dfashion.jpg" alt="" />
+        <span class="overlay">Read the case →</span>
+      </div>
+      <div class="card-body">
+        <p class="meta">Client work · 2014</p>
+        <h3>Dfashion</h3>
+        <p class="blurb">Women’s fashion shop on CodeIgniter: variations, filters, coupons, inventory, tracking, invoicing, PayPal.</p>
+        <ul class="stack"><li>PHP</li><li>CodeIgniter</li><li>MySQL</li><li>PayPal</li></ul>
+      </div>
+    </button>
+<button type="button" class="card reveal" data-kind="client" data-id="crm">
+      <div class="thumb">
+        <img src="./projects/real-estate.jpg" alt="" />
+        <span class="overlay">Read the case →</span>
+      </div>
+      <div class="card-body">
+        <p class="meta">Client work · 2013</p>
+        <h3>Real Estate CRM</h3>
+        <p class="blurb">Agency CRM: customers, agents, employees, EMI tracking, expenses, and the reports leadership actually opens.</p>
+        <ul class="stack"><li>PHP</li><li>MySQL</li><li>JavaScript</li></ul>
+      </div>
+    </button>
+<button type="button" class="card reveal" data-kind="open-source" data-id="travel">
+      <div class="thumb">
+        <img src="./projects/travel-reel.jpg" alt="" />
+        <span class="overlay">Read the case →</span>
+      </div>
+      <div class="card-body">
+        <p class="meta">Open source · 2026</p>
+        <h3>Travel Reel Studio</h3>
+        <p class="blurb">Local-first travel media studio. AI directs the cut, FFmpeg renders the Reel — works offline, then optionally talks to Google Photos and Gemini.</p>
+        <ul class="stack"><li>TypeScript</li><li>Prisma</li><li>FFmpeg</li><li>Gemini</li></ul>
+      </div>
+    </button>
+<button type="button" class="card reveal" data-kind="open-source" data-id="rag">
+      <div class="thumb">
+        <img src="./projects/rag.jpg" alt="" />
+        <span class="overlay">Read the case →</span>
+      </div>
+      <div class="card-body">
+        <p class="meta">Open source · 2026</p>
+        <h3>Adaptive RAG Engine</h3>
+        <p class="blurb">Enterprise knowledge assistant with dynamic model routing — hard questions to Bedrock, lighter ones to TinyLlama on EKS.</p>
+        <ul class="stack"><li>Python</li><li>Amazon Bedrock</li><li>OpenSearch</li><li>EKS</li></ul>
+      </div>
+    </button>
+<button type="button" class="card reveal" data-kind="client" data-id="maalgaadi">
+      <div class="thumb">
+        <img src="./projects/maalgaadi.jpg" alt="" />
+        <span class="overlay">Read the case →</span>
+      </div>
+      <div class="card-body">
+        <p class="meta">Client work · 2015</p>
+        <h3>Maalgaadi</h3>
+        <p class="blurb">Taxi booking with live vehicle tracking and status updates — the kind of ops board a dispatcher actually watches.</p>
+        <ul class="stack"><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>REST</li></ul>
+      </div>
+    </button>
+<button type="button" class="card reveal" data-kind="client" data-id="musical">
+      <div class="thumb">
+        <img src="./projects/musical.jpg" alt="" />
+        <span class="overlay">Read the case →</span>
+      </div>
+      <div class="card-body">
+        <p class="meta">Client work · 2013</p>
+        <h3>Musical Rejuvenation</h3>
+        <p class="blurb">Music search engine on the Echo Nest API — songs, artists, cities, and the rest of the catalogue.</p>
+        <ul class="stack"><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>Echo Nest</li></ul>
+      </div>
+    </button>
+<button type="button" class="card reveal" data-kind="product" data-id="micro">
+      <div class="thumb">
+        <img src="./projects/micro.jpg" alt="" />
+        <span class="overlay">Read the case →</span>
+      </div>
+      <div class="card-body">
+        <p class="meta">Product · 2017</p>
+        <h3>Micro Measurement</h3>
+        <p class="blurb">Lightweight lab ERP — sibling to Star Calibration — that cut manual process work by about 50%.</p>
+        <ul class="stack"><li>PHP</li><li>Node.js</li><li>MySQL</li><li>JavaScript</li></ul>
+      </div>
+    </button>
+<button type="button" class="card reveal" data-kind="open-source" data-id="workflow">
+      <div class="thumb">
+        <img src="./projects/workflow.jpg" alt="" />
+        <span class="overlay">Read the case →</span>
+      </div>
+      <div class="card-body">
+        <p class="meta">Open source · 2025</p>
+        <h3>Distributed Workflow</h3>
+        <p class="blurb">Workflow engine with a TypeScript backend and a dedicated frontend — model, run, and observe multi-step jobs.</p>
+        <ul class="stack"><li>TypeScript</li><li>Node.js</li><li>React</li></ul>
+      </div>
+    </button>
+        </div>
+
+        <div style="margin-top:4rem">
+          <div class="reveal">
+            <p class="eyebrow">Also shipped</p>
+            <h3 class="subhead" style="margin-top:0.4rem">A longer paper trail</h3>
+            <p class="sub">Fashion, hospitality, SMS, and accounting — the client work that filled the decade at Abaxsoft.</p>
+          </div>
+          <div class="gallery">
+            <article class="gcard"><img src="./projects/mawale.jpg" alt="" /><div class="card-body"><p class="meta">2014</p><h4>Mawale Infotech</h4><p class="blurb">SaaS platform for multi-level, white-label SMS reseller services — provisioning, billing, and the reseller tree.</p><p class="quiet" style="margin-top:0.75rem;font-size:0.75rem;color:var(--muted)">PHP · MySQL · API</p></div></article>
+            <article class="gcard"><img src="./projects/phoneguru.jpg" alt="" /><div class="card-body"><p class="meta">2013</p><h4>PhoneGuru</h4><p class="blurb">Utility app for phone features and optimisation, plus the supporting website and Play Store listing.</p><p class="quiet" style="margin-top:0.75rem;font-size:0.75rem;color:var(--muted)">PHP · Android · API</p></div></article>
+            <article class="gcard"><img src="./projects/just-sms.jpg" alt="" /><div class="card-body"><p class="meta">2013</p><h4>Just SMS</h4><p class="blurb">Messaging service with a fast send path, backend web services, and the Play Store client in front of it.</p><p class="quiet" style="margin-top:0.75rem;font-size:0.75rem;color:var(--muted)">PHP · JSON · API</p></div></article>
+            <a class="gcard" href="https://shop.addresschic.com" target="_blank" rel="noreferrer"><img src="./projects/addresschic.jpg" alt="" /><div class="card-body"><p class="meta">2014</p><h4>Addresschic</h4><p class="blurb">Online fashion marketplace built on Magento — catalogue, checkout, and the storefront a boutique actually runs.</p><p class="quiet" style="margin-top:0.75rem;font-size:0.75rem;color:var(--muted)">PHP · Magento</p></div></a>
+            <article class="gcard"><img src="./projects/nyc.jpg" alt="" /><div class="card-body"><p class="meta">2014</p><h4>NYC</h4><p class="blurb">Fashion catalog site on WordPress — lookbooks, collections, and a storefront that could be updated without a developer.</p><p class="quiet" style="margin-top:0.75rem;font-size:0.75rem;color:var(--muted)">PHP · WordPress</p></div></article>
+            <article class="gcard"><img src="./projects/angaara.jpg" alt="" /><div class="card-body"><p class="meta">2015</p><h4>Angaara</h4><p class="blurb">Restaurant website with online ordering and party booking, so the floor stopped taking reservations on paper.</p><p class="quiet" style="margin-top:0.75rem;font-size:0.75rem;color:var(--muted)">WordPress · PHP</p></div></article>
+            <article class="gcard"><img src="./projects/hotel-om.jpg" alt="" /><div class="card-body"><p class="meta">2015</p><h4>Hotel Om</h4><p class="blurb">Hotel management system covering rooms, bookings, and the front-desk loop.</p><p class="quiet" style="margin-top:0.75rem;font-size:0.75rem;color:var(--muted)">PHP · MySQL</p></div></article>
+            <article class="gcard"><img src="./projects/kp-agencies.jpg" alt="" /><div class="card-body"><p class="meta">2013</p><h4>Kp Agencies</h4><p class="blurb">Accounting software for purchase and sales management — ledgers the operations team could trust daily.</p><p class="quiet" style="margin-top:0.75rem;font-size:0.75rem;color:var(--muted)">PHP · MySQL</p></div></article>
+          </div>
+          <ul class="more-list">
+            <li><div><p><strong>Stock CRM</strong></p><p class="blurb">In-house CRM for the client database and employee work tracking.</p></div><span class="quiet">PHP · MySQL</span></li>
+            <li><div><p><strong>School App</strong></p><p class="blurb">Android app for school notices and teacher posts, with push notifications on Parse.</p></div><span class="quiet">Parse · JavaScript</span></li>
+            <li><div><p><strong>Dial Up & Refill Minute</strong></p><p class="blurb">Mobile app for international recharge — top-ups without a call centre in the middle.</p></div><span class="quiet">PHP · JSON</span></li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section id="experience" class="band surface">
+    <section id="experience" class="band">
       <div class="wrap pad exp">
-        <div>
+        <div class="reveal">
           <p class="eyebrow">Experience</p>
-          <h2>A decade leading delivery</h2>
-          <p class="lede short">Architecture, mentoring, and client work — from agency floors to enterprise programmes.</p>
+          <h2>A decade-plus leading delivery</h2>
+          <p class="lede">Architecture, mentoring, and the code that has to last — from an agency floor in Indore to enterprise programmes in Pune.</p>
+          <div class="edu">
+            <p class="meta">Education</p>
+            <h3 style="margin-top:0.5rem;font-size:1.25rem">Bachelor of Engineering in Computer Science</h3>
+            <p class="where">KCB Technical Academy · Indore, Madhya Pradesh</p>
+            <p class="where">Sep 2008 — Apr 2012 · CGPA 7.1 / 10</p>
+          </div>
         </div>
         <ol class="jobs">
-          <li>
-            <p class="when">Present</p>
-            <div>
-              <h3>Technical Lead</h3>
-              <p class="meta">ITC Infotech · Pune, Maharashtra</p>
-              <ul>
-                <li>Lead web and mobile delivery for enterprise clients — architecture, mentoring, and hands-on implementation.</li>
-                <li>Translate client needs into pragmatic technical plans and keep teams shipping without over-engineering.</li>
-              </ul>
-            </div>
+          <span class="rail" aria-hidden></span>
+          <li class="job reveal"><span class="pin"></span>
+            <p class="when">Sep 2024 — Present</p>
+            <h3>Project Lead</h3>
+            <p class="where">Persistent Systems · Pune, Maharashtra</p>
+            <ul>
+              <li>Lead cross-functional teams to deliver complex features and clear hard technical issues on tight deadlines.</li>
+              <li>Restructured an application and file-automation system — 50% more file throughput, cleaner data.</li>
+              <li>Design and maintain REST APIs for data exchange and third-party integrations.</li>
+              <li>Run Scrum in practice: user stories, timelines, and task split, with a 95% completion rate.</li>
+            </ul>
           </li>
-          <li>
-            <p class="when">Oct 2022 — Present</p>
-            <div>
-              <h3>Technical Lead</h3>
-              <p class="meta">Redvision Global Technologies · India</p>
-              <ul>
-                <li>Own the full development lifecycle: estimates, architecture, delivery, and client communication.</li>
-                <li>Lead and mentor developers across frontend, backend, and infrastructure.</li>
-                <li>Primary stack: PHP, React, Node.js, CodeIgniter, and Yii — chosen for fit, not fashion.</li>
-              </ul>
-            </div>
+          <li class="job reveal"><span class="pin"></span>
+            <p class="when">Oct 2022 — Aug 2024</p>
+            <h3>Technical Lead</h3>
+            <p class="where">Redvision Global Pvt. Ltd. · Indore, Madhya Pradesh</p>
+            <ul>
+              <li>Managed a team of 18, cleared a backlog of customer complaints and bugs, and rebuilt the workflow in Agile.</li>
+              <li>Team output improved 3×; new features shipped inside four months.</li>
+              <li>Raised API speed 70%, AUM calculation 40%, and cut server cost 30%.</li>
+              <li>Conceived Sales Ninja, staffed a team of 6, shipped the Call CRM MVP, and designed the sister CRM roadmap.</li>
+            </ul>
           </li>
-          <li>
-            <p class="when">Jul 2015 — Oct 2022</p>
-            <div>
-              <h3>Team Lead & Project Manager</h3>
-              <p class="meta">Abaxsoft Web Solution · India</p>
-              <ul>
-                <li>Directed projects from conception through deployment for agencies, manufacturers, and marketplaces.</li>
-                <li>Set coding standards, designed scalable architectures, and grew a high-performance engineering team.</li>
-                <li>Built the long-running Oorja calibration platform and a range of CRM, logistics, and commerce systems.</li>
-              </ul>
-            </div>
+          <li class="job reveal"><span class="pin"></span>
+            <p class="when">Aug 2012 — Oct 2022</p>
+            <h3>Technical Lead</h3>
+            <p class="where">Abaxsoft Solutions Pvt. Ltd. · Indore, Madhya Pradesh</p>
+            <ul>
+              <li>Built and refreshed technical training curricula against whatever the industry had just moved to.</li>
+              <li>Kept critical customer operations up — downtime down 25%, warranty cost down 33%.</li>
+              <li>Installed Scrum with Jira and time tracking: deployment ratio up 64%, 95% of story points completed.</li>
+              <li>Introduced automation that removed redundant work and saved the team 65 hours a week.</li>
+            </ul>
           </li>
         </ol>
       </div>
     </section>
 
-    <section id="stack" class="band">
+    <section id="stack">
       <div class="wrap pad">
-        <p class="eyebrow">Stack</p>
-        <h2>Tools I actually use</h2>
+        <div class="reveal">
+          <p class="eyebrow">Stack</p>
+          <h2>Tools I actually use</h2>
+        </div>
         <div class="skill-grid">
-          <div class="skill-card">
-            <h3>Languages</h3>
-            <ul><li>TypeScript</li><li>JavaScript</li><li>PHP</li><li>Python</li><li>Java</li><li>SQL</li></ul>
-          </div>
-          <div class="skill-card">
-            <h3>Build with</h3>
-            <ul><li>React</li><li>Node.js</li><li>CodeIgniter</li><li>Yii</li><li>Laravel</li><li>Prisma</li><li>MySQL</li></ul>
-          </div>
-          <div class="skill-card">
-            <h3>Operate</h3>
-            <ul><li>AWS</li><li>Terraform</li><li>EKS</li><li>GitLab CI</li><li>Git</li><li>Agile delivery</li></ul>
-          </div>
+          <div class="skill-card reveal"><h3>Languages</h3><ul><li>TypeScript</li><li>JavaScript</li><li>PHP</li><li>Python</li><li>SQL</li></ul></div>
+          <div class="skill-card reveal"><h3>Build with</h3><ul><li>React</li><li>Node.js</li><li>Laravel</li><li>Yii2</li><li>CodeIgniter</li><li>MySQL</li><li>MongoDB</li><li>Redis</li></ul></div>
+          <div class="skill-card reveal"><h3>Operate</h3><ul><li>AWS</li><li>Linux</li><li>GitLab CI</li><li>GitHub</li><li>Beanstalk</li><li>Terraform</li><li>Scrum</li></ul></div>
         </div>
         <h3 class="subhead">Recent study</h3>
         <ul class="certs">
@@ -252,7 +391,6 @@
           <li><span>Software Architecture: From Developer to Architect</span><span>LinkedIn Learning · 2024</span></li>
           <li><span>Full-Stack JavaScript: MongoDB, Node, and React</span><span>LinkedIn Learning · 2023</span></li>
           <li><span>CI/CD with GitLab</span><span>LinkedIn Learning · 2023</span></li>
-          <li><span>What Is Generative AI?</span><span>LinkedIn Learning · 2023</span></li>
           <li><span>Agile at Work: Planning with User Stories</span><span>LinkedIn Learning · 2023</span></li>
         </ul>
       </div>
@@ -260,37 +398,59 @@
 
     <section id="contact" class="contact">
       <div class="wrap pad">
-        <p class="eyebrow light">Contact</p>
+        <p class="eyebrow">Contact</p>
         <h2>Have a system that needs a lead who still writes code?</h2>
-        <p class="lede light">I am based in Pune and work with product and engineering teams on web, mobile, and platform delivery.</p>
+        <p class="lede">I am based in Pune and work with product and engineering teams on web, mobile, and platform delivery.</p>
         <div class="cta">
           <a class="btn paper" href="mailto:vipuljain2806@gmail.com">vipuljain2806@gmail.com</a>
           <button class="btn ghost" id="copy-email" type="button">Copy email</button>
         </div>
         <div class="social">
+          <a href="tel:+918359971799">+91 83599 71799</a>
           <a href="https://github.com/vipuljain28" target="_blank" rel="noreferrer">github.com/vipuljain28</a>
           <a href="https://www.linkedin.com/in/vipuljain2806/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://x.com/vipuljain2806" target="_blank" rel="noreferrer">@vipuljain2806</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap bar compact">
+    <div class="wrap bar">
       <p>© <span id="year">2026</span> Vipul Jain</p>
-      <p>Built from public GitHub and LinkedIn. No private client repos listed.</p>
+      <p>Built from the resume, public GitHub, and LinkedIn.</p>
     </div>
   </footer>
 
+  <div class="modal" id="modal" hidden>
+    <button class="scrim" id="scrim" type="button" aria-label="Close project"></button>
+    <div class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="modal-title"></div>
+  </div>
+
+  <script type="application/json" id="project-data">[{"id":"sales-ninja","name":"Sales Ninja Call CRM","year":"2022 — 2024","kind":"product","role":"Technical Lead","blurb":"All-in-one call CRM: live monitoring, agent scorecards, and coaching insights. Built from zero with a team of six — MVP in four months.","story":"At Redvision I conceived Sales Ninja as a new product stream, hired a dedicated team of six, and led it from a blank repo to a working call-management product. The floor can watch calls in real time, track agent metrics, and coach in the moment instead of after the fact. Before I left I shipped Sales Ninja Call CRM and wrote the roadmap for Sales Ninja CRM, the sister product.","outcomes":["MVP delivered in 4 months from scratch","Dedicated product team of 6","Roadmap designed for the sister CRM"],"stack":["React","Node.js","MongoDB","Redis","AWS"],"image":"./projects/sales-ninja.jpg","wide":true},{"id":"wealthelite","name":"Wealthelite","year":"2022 — 2024","kind":"product","role":"Technical Lead / Developer","blurb":"SaaS ERP for mutual fund distributors — portfolios, transactions, and AUM. APIs 70% faster, AUM calculation 40% quicker.","story":"Wealthelite is a Yii2-based ERP for MFDs: portfolio management, transactions, and AUM in one SaaS. I led the performance rebuild — query paths, caching, and calculation jobs — so the system could keep up with daily AUM runs without burning the server bill. Node and React sit around the PHP core for the pieces that needed to be snappy.","outcomes":["API speed up 70%","AUM calculation up 40%","Server cost down 30%"],"stack":["PHP","Yii2","MySQL","MongoDB","Redis","React","Node.js"],"image":"./projects/wealthelite.jpg"},{"id":"sage","name":"Sage Intacct","year":"2024 — present","kind":"client","role":"Project Lead","blurb":"Cloud financials for mid-market companies. At Persistent I lead delivery, REST integrations, and a file-automation rebuild.","story":"Sage Intacct is cloud accounting — financials, planning, HR, and payroll — for growing organisations. As Project Lead at Persistent I run cross-functional delivery: user stories, timelines, and the technical work itself. I restructured an application and file-automation system so it could process 50% more files with better correctness, and I design REST APIs for data exchange and third-party integrations.","outcomes":["File processing capacity up 50%","95% sprint task completion","REST APIs for third-party integrations"],"stack":["PHP","JavaScript","REST","Scrum"],"image":"./projects/sage-intacct.jpg"},{"id":"star","name":"Star Calibration","year":"2018 — ongoing","kind":"product","role":"Technical Lead","blurb":"SaaS LIMS for calibration labs. Digitised the floor, cut required workforce by 40%, and lifted productivity 45–60%.","story":"A SaaS ERP for laboratories that need to run calibration online instead of on paper. Labs moved their process into the product — instruments, certificates, workflow — and needed fewer people to do more work.","outcomes":["Workforce reduced by 40%","Productivity up 45–60%","Still in production"],"stack":["PHP","Node.js","MySQL","JavaScript"],"image":"./projects/star-calibration.jpg"},{"id":"oorja","name":"Oorja Technical","year":"2011 — ongoing","kind":"client","blurb":"Long partnership: a dynamic calibration engine, then a full ERP covering HR, CRM, inventory, accounts, and validation testing.","story":"Oorja started as a calibration automation system — dynamic fields and form formats so labs could stop inventing spreadsheets. It grew into a complete organisational ERP: HRM, CRM, inventory, invoicing, project management, accounts, and automated calibration validation.","outcomes":["Dynamic forms replaced static paper","Full ERP: HR, CRM, inventory, accounts","Multi-year production partnership"],"stack":["PHP","MySQL","JavaScript"],"live":"http://oorjatechnical.com","image":"./projects/oorja.jpg"},{"id":"mobile-ide","name":"My Mobile IDE","year":"2026","kind":"open-source","blurb":"A Code-OSS IDE built for iPhone, iPad, and Android — a real workbench, not a desktop app squeezed onto a phone.","story":"Most mobile IDEs are Electron desktops wearing a smaller window. My Mobile IDE starts from the Code-OSS architecture, wraps it in a Capacitor shell, and talks to a secure remote runtime.","stack":["TypeScript","Capacitor","VS Code OSS","Vite"],"href":"https://github.com/vipuljain28/my-mobile-ide","image":"./projects/mobile-ide.jpg"},{"id":"nextdaycuts","name":"NextDayCuts","year":"2016","kind":"client","blurb":"Lawn-care marketplace. Homeowners book a cut, mowers bid, PayPal settles — maps and property context included.","story":"An online lawn-care service: a homeowner books a job, mowers bid, payment goes through PayPal. Laravel on the backend, Google Maps for location, Zillow for property context.","stack":["PHP","Laravel","MySQL","Google Maps","PayPal"],"live":"http://nextdaycuts.com","image":"./projects/nextdaycuts.jpg"},{"id":"autobuoy","name":"Autobuoy","year":"2013","kind":"client","blurb":"Automobile marketplace with seller storefronts, rentals, community, and payments — Laravel throughout.","story":"An online marketplace for automobiles: listings with serious filters, seller e-shops, rental-car management, community features, and a payment gateway.","stack":["PHP","Laravel","MySQL","PayPal"],"image":"./projects/autobuoy.jpg"},{"id":"dfashion","name":"Dfashion","year":"2014","kind":"client","blurb":"Women’s fashion shop on CodeIgniter: variations, filters, coupons, inventory, tracking, invoicing, PayPal.","story":"An online fashion store for women. Product variations, layered filters, shipment options, discount coupons, inventory, delivery tracking, and invoicing — the full retail loop on CodeIgniter with PayPal at checkout.","stack":["PHP","CodeIgniter","MySQL","PayPal"],"live":"https://dfashion.co.uk","image":"./projects/dfashion.jpg"},{"id":"crm","name":"Real Estate CRM","year":"2013","kind":"client","blurb":"Agency CRM: customers, agents, employees, EMI tracking, expenses, and the reports leadership actually opens.","story":"A CRM and expense system for real-estate businesses. It covers the customer, the agent, and the employee; tracks EMIs; and produces the reports a sales floor lives on.","stack":["PHP","MySQL","JavaScript"],"image":"./projects/real-estate.jpg"},{"id":"travel","name":"Travel Reel Studio","year":"2026","kind":"open-source","blurb":"Local-first travel media studio. AI directs the cut, FFmpeg renders the Reel — works offline, then optionally talks to Google Photos and Gemini.","story":"A local-first tool for turning a trip’s photos into Instagram Reels. The AI proposes the cut; FFmpeg does the render. It works without a network, then can layer Google Photos, Places, and Gemini when you want them.","stack":["TypeScript","Prisma","FFmpeg","Gemini"],"href":"https://github.com/vipuljain28/travel-reel-studio","image":"./projects/travel-reel.jpg"},{"id":"rag","name":"Adaptive RAG Engine","year":"2026","kind":"open-source","blurb":"Enterprise knowledge assistant with dynamic model routing — hard questions to Bedrock, lighter ones to TinyLlama on EKS.","story":"A RAG assistant that does not send every query to the expensive model. Complex questions route to Amazon Bedrock (Claude); lighter ones stay on TinyLlama on EKS. Titan embeddings, OpenSearch Serverless, Bedrock Guardrails, and a one-command Terraform deploy.","stack":["Python","Amazon Bedrock","OpenSearch","EKS","Terraform"],"href":"https://github.com/vipuljain28/Adaptive-RAG-Engine","image":"./projects/rag.jpg"},{"id":"maalgaadi","name":"Maalgaadi","year":"2015","kind":"client","blurb":"Taxi booking with live vehicle tracking and status updates — the kind of ops board a dispatcher actually watches.","story":"An online taxi booking system with real-time vehicle tracking and booking status. PHP and a REST layer talking to the devices on the road, so the customer and the dispatcher see the same trip.","stack":["PHP","MySQL","JavaScript","REST"],"live":"http://www.maalgaadi.net","image":"./projects/maalgaadi.jpg"},{"id":"musical","name":"Musical Rejuvenation","year":"2013","kind":"client","blurb":"Music search engine on the Echo Nest API — songs, artists, cities, and the rest of the catalogue.","story":"A music search engine that used the Echo Nest API to find songs, artists, cities, countries, and other music elements. A small, sharp product: search, listen, discover.","stack":["PHP","MySQL","JavaScript","Echo Nest"],"image":"./projects/musical.jpg"},{"id":"micro","name":"Micro Measurement","year":"2017","kind":"product","blurb":"Lightweight lab ERP — sibling to Star Calibration — that cut manual process work by about 50%.","story":"A SaaS ERP for laboratories that needed something lighter than the full Star Calibration suite. Same family of problems — instruments, process, certificates — with a smaller footprint. Manual processes dropped by roughly half.","outcomes":["Manual processes cut by ~50%"],"stack":["PHP","Node.js","MySQL","JavaScript"],"image":"./projects/micro.jpg"},{"id":"workflow","name":"Distributed Workflow","year":"2025","kind":"open-source","blurb":"Workflow engine with a TypeScript backend and a dedicated frontend — model, run, and observe multi-step jobs.","story":"An end-to-end workflow engine: define the graph, run it across services, watch it. TypeScript on both sides. Built to make multi-step jobs inspectable instead of buried in cron logs.","stack":["TypeScript","Node.js","React"],"href":"https://github.com/vipuljain28/Distributed-Workflow","image":"./projects/workflow.jpg"}]</script>
   <script>
+    const data = JSON.parse(document.getElementById("project-data").textContent);
+    const byId = Object.fromEntries(data.map((p) => [p.id, p]));
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+
+    const header = document.getElementById("header");
+    const progress = document.getElementById("progress");
+    function onScroll() {
+      header.classList.toggle("is-on", window.scrollY > 12);
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      progress.style.setProperty("--p", max > 0 ? String(h.scrollTop / max) : "0");
+    }
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+
     const menu = document.getElementById("menu");
     const menuBtn = document.getElementById("menu-btn");
     menuBtn.addEventListener("click", () => {
       const open = menu.hidden;
       menu.hidden = !open;
       menuBtn.setAttribute("aria-expanded", String(open));
-      menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
       document.body.style.overflow = open ? "hidden" : "";
     });
     menu.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => {
@@ -299,30 +459,118 @@
       document.body.style.overflow = "";
     }));
 
-    function numberVisible() {
-      let n = 0;
-      document.querySelectorAll("#work-list > li").forEach((row) => {
-        if (row.hidden) return;
-        n += 1;
-        const slot = row.querySelector(".num");
-        if (slot) slot.textContent = String(n).padStart(2, "0");
-      });
-    }
-    numberVisible();
+    const hero = document.getElementById("top");
+    hero.addEventListener("mousemove", (e) => {
+      if (reduce) return;
+      const r = hero.getBoundingClientRect();
+      hero.style.setProperty("--spot-x", ((e.clientX - r.left) / r.width) * 100 + "%");
+      hero.style.setProperty("--spot-y", ((e.clientY - r.top) / r.height) * 100 + "%");
+    });
+    const portrait = document.getElementById("portrait");
+    portrait.addEventListener("mousemove", (e) => {
+      if (reduce) return;
+      const r = portrait.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - 0.5;
+      const y = (e.clientY - r.top) / r.height - 0.5;
+      portrait.style.setProperty("--rx", (-y * 6).toFixed(2) + "deg");
+      portrait.style.setProperty("--ry", (x * 8).toFixed(2) + "deg");
+    });
+    portrait.addEventListener("mouseleave", () => {
+      portrait.style.setProperty("--rx", "0deg");
+      portrait.style.setProperty("--ry", "0deg");
+    });
 
-    document.querySelectorAll("[data-filter]").forEach((btn) => {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+      }
+    }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+    document.querySelectorAll(".reveal").forEach((n) => {
+      if (reduce) n.classList.add("in");
+      else io.observe(n);
+    });
+
+    document.querySelectorAll("[data-count]").forEach((el) => {
+      const target = Number(el.getAttribute("data-count"));
+      const suffix = el.getAttribute("data-suffix") || "";
+      const parent = el.closest(".metric");
+      const run = () => {
+        if (reduce) { el.textContent = target + suffix; return; }
+        const start = performance.now();
+        const tick = (now) => {
+          const p = Math.min(1, (now - start) / 900);
+          const eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(target * eased) + suffix;
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      };
+      const cio = new IntersectionObserver(([e]) => { if (e.isIntersecting) { run(); cio.disconnect(); } }, { threshold: 0.45 });
+      cio.observe(parent);
+    });
+
+    const filters = document.getElementById("filters");
+    const pill = document.getElementById("pill");
+    function placePill() {
+      const active = filters.querySelector(".chip.on");
+      if (!active) return;
+      const t = filters.getBoundingClientRect();
+      const a = active.getBoundingClientRect();
+      pill.style.width = a.width + "px";
+      pill.style.transform = "translateX(" + (a.left - t.left) + "px)";
+    }
+    requestAnimationFrame(placePill);
+    window.addEventListener("resize", placePill);
+    filters.querySelectorAll("[data-filter]").forEach((btn) => {
       btn.addEventListener("click", () => {
         const f = btn.getAttribute("data-filter");
-        document.querySelectorAll("[data-filter]").forEach((b) => {
+        filters.querySelectorAll("[data-filter]").forEach((b) => {
           const on = b === btn;
           b.classList.toggle("on", on);
           b.setAttribute("aria-selected", String(on));
         });
-        document.querySelectorAll("#work-list > li").forEach((row) => {
-          row.hidden = f !== "all" && row.getAttribute("data-kind") !== f;
+        document.querySelectorAll("#work-grid .card").forEach((card) => {
+          card.hidden = f !== "all" && card.getAttribute("data-kind") !== f;
         });
-        numberVisible();
+        placePill();
       });
+    });
+
+    const modal = document.getElementById("modal");
+    const panel = document.getElementById("panel");
+    const scrim = document.getElementById("scrim");
+    function closeModal() {
+      panel.classList.remove("on");
+      scrim.classList.remove("on");
+      setTimeout(() => { modal.hidden = true; document.body.style.overflow = ""; }, reduce ? 0 : 220);
+    }
+    function openModal(id) {
+      const p = byId[id];
+      if (!p) return;
+      const href = p.href || p.live;
+      panel.innerHTML = (p.image ? '<img src="' + p.image + '" alt="" />' : "") +
+        '<div class="panel-body"><div class="panel-top"><p class="meta">' +
+        ( { "open-source": "Open source", product: "Product", client: "Client work" }[p.kind] ) +
+        (p.role ? " · " + p.role : "") + " · " + p.year +
+        '</p><button class="close" type="button" aria-label="Close" id="close-modal">×</button></div>' +
+        '<h3 id="modal-title">' + p.name + '</h3>' +
+        '<p class="story">' + p.story + '</p>' +
+        (p.outcomes ? '<ul class="outcomes">' + p.outcomes.map((o) => "<li>" + o + "</li>").join("") + "</ul>" : "") +
+        '<ul class="stack" style="margin-top:1.25rem">' + p.stack.map((s) => "<li>" + s + "</li>").join("") + "</ul>" +
+        '<div class="cta">' +
+        (href ? '<a class="btn btn-primary" href="' + href + '" target="_blank" rel="noreferrer">' + (p.href ? "View on GitHub" : "Visit live site") + "</a>" : "") +
+        '<button class="btn btn-outline" type="button" id="close-modal-2">Close</button></div></div>';
+      modal.hidden = false;
+      document.body.style.overflow = "hidden";
+      requestAnimationFrame(() => { panel.classList.add("on"); scrim.classList.add("on"); });
+      document.getElementById("close-modal").addEventListener("click", closeModal);
+      document.getElementById("close-modal-2").addEventListener("click", closeModal);
+    }
+    scrim.addEventListener("click", closeModal);
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !modal.hidden) closeModal(); });
+    document.getElementById("work-grid").addEventListener("click", (e) => {
+      const card = e.target.closest("[data-id]");
+      if (card) openModal(card.getAttribute("data-id"));
     });
 
     document.getElementById("copy-email").addEventListener("click", async (e) => {
@@ -335,8 +583,6 @@
         window.location.href = "mailto:vipuljain2806@gmail.com";
       }
     });
-
-    document.getElementById("year").textContent = String(new Date().getFullYear());
   </script>
 </body>
 </html>
