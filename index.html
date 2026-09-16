@@ -48,7 +48,7 @@
       <div class="hero-spot" aria-hidden></div>
       <div>
         <p class="kicker">
-          <img class="mini-avatar" src="./avatar.jpg" alt="" width="32" height="32" />
+          <img class="mini-avatar" src="./photos/vipul-github.jpg" alt="" width="32" height="32" />
           <span><i class="dot"></i> Technical Lead · Persistent Systems</span>
           <span>Pune, Maharashtra</span>
         </p>
@@ -70,10 +70,13 @@
         </div>
       </div>
       <aside>
-        <div class="portrait" id="portrait">
-          <img src="./avatar.jpg" alt="Vipul Jain, technical lead" width="640" height="640" />
+        <div class="photo-main">
+          <img src="./photos/vipul-github.jpg" alt="Vipul Jain, technical lead" width="640" height="640" />
         </div>
-        <p class="caption"><span>Vipul Jain</span><span>Full stack · Pune</span></p>
+        <div class="photo-row">
+          <img class="photo-alt" src="./photos/vipul-x.jpg" alt="Vipul Jain" width="256" height="256" />
+          <p class="caption stacked"><span>Vipul Jain</span><span>Full stack · Pune</span></p>
+        </div>
       </aside>
     </section>
 
@@ -465,19 +468,6 @@
       const r = hero.getBoundingClientRect();
       hero.style.setProperty("--spot-x", ((e.clientX - r.left) / r.width) * 100 + "%");
       hero.style.setProperty("--spot-y", ((e.clientY - r.top) / r.height) * 100 + "%");
-    });
-    const portrait = document.getElementById("portrait");
-    portrait.addEventListener("mousemove", (e) => {
-      if (reduce) return;
-      const r = portrait.getBoundingClientRect();
-      const x = (e.clientX - r.left) / r.width - 0.5;
-      const y = (e.clientY - r.top) / r.height - 0.5;
-      portrait.style.setProperty("--rx", (-y * 6).toFixed(2) + "deg");
-      portrait.style.setProperty("--ry", (x * 8).toFixed(2) + "deg");
-    });
-    portrait.addEventListener("mouseleave", () => {
-      portrait.style.setProperty("--rx", "0deg");
-      portrait.style.setProperty("--ry", "0deg");
     });
 
     const io = new IntersectionObserver((entries) => {
